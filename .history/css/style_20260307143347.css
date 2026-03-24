@@ -1,0 +1,359 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* =====================
+   PALET WARNA UNGU
+   --ungu-gelap   : #2e1760  (navbar, footer)
+   --ungu-utama   : #6c3fc5  (aksen utama)
+   --ungu-sedang  : #9b6ee0  (hover, border)
+   --ungu-muda    : #d8c8f5  (border ringan)
+   --ungu-pucat   : #f0eaff  (background halaman)
+   ===================== */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    background-color: #f0eaff;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+
+header.site-header {
+    background-color: #2e1760;
+    color: white;
+}
+
+/* NAVBAR */
+header.site-header .navbar {
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #2e1760;
+}
+
+header.site-header .nav-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+header.site-header .nav-list li a {
+    text-decoration: none;
+    color: #d8c8f5;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: color 0.2s ease;
+}
+
+header.site-header .nav-list li a:hover {
+    color: white;
+}
+
+/* HERO */
+header.site-header .hero {
+    position: relative;
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+    margin-top: 57px;
+}
+
+header.site-header .hero .hero-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header.site-header .hero .hero-overlay h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    letter-spacing: 10px;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+
+/* =====================
+   MAIN & LAYOUT
+   ===================== */
+
+main {
+    max-width: 1100px;
+    margin-inline: auto;
+    padding: 2rem 1.5rem;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+#content {
+    flex: 3;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+/* =====================
+   ARTICLE
+   ===================== */
+
+article {
+    background-color: white;
+    border: 1px solid #d8c8f5;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+article h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #6c3fc5;
+    color: #2e1760;
+}
+
+article h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #6c3fc5;
+}
+
+article p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+
+
+/* =====================
+   PROJECT CARDS
+   ===================== */
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.project-card {
+    flex: 1 1 160px;
+    background-color: #f0eaff;
+    border: 1px solid #d8c8f5;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.project-img {
+    width: 100%;
+    max-width: 250px;
+    height: 100px;
+    object-fit:cover;
+    object-position: top;
+    display: block;
+    margin: 0.5rem auto 1rem auto;
+    border-radius: 0px;
+}
+
+.project-card h3 {
+    font-size: 0.8rem;
+    margin-top: 0.5;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: #2e1760;
+}
+
+.project-card p {
+    font-size: 0.85rem;
+    color: #666;
+    margin: 0.2rem 0;
+    line-height: 1.5;
+    text-align: justify;
+    text-justify: inter-word;
+    word-break: break-all;
+}
+
+.education-p {
+    padding-left: 2cm;
+    margin: 0.2rem 0;
+    line-height: 1.5;
+    text-align: justify;
+    text-justify: inter-word;
+    word-break: break-all;
+}
+
+/* =====================
+   ALBUM LIST
+   ===================== */
+
+.pengalaman-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 1rem 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.pengalaman-list li {
+    padding: 0.7rem 1rem;
+    background-color: #f0eaff;
+    border-left: 3px solid #6c3fc5;
+    border-radius: 0 4px 4px 0;
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+
+/* =====================
+   ASIDE
+   ===================== */
+
+aside {
+    flex: 1;
+    position: sticky;
+    top: 80px;
+}
+
+aside .aside-inner {
+    background-color: white;
+    border: 1px solid #d8c8f5;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+aside h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid #d8c8f5;
+    color: #2e1760;
+}
+
+aside h3:first-child {
+    margin-top: 0;
+}
+
+.aside-img {
+    width: 100%;
+    max-width: 250px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0.5rem auto 1rem auto;
+    border-radius: 100px;
+}
+
+.aside-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.aside-info li {
+    font-size: 0.85rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+.aside-social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.aside-social li a {
+    display: block;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: #6c3fc5;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    transition: background-color 0.2s ease;
+}
+
+.aside-social li a:hover {
+    background-color: #9b6ee0;
+}
+
+
+/* =====================
+   FOOTER
+   ===================== */
+
+footer {
+    background-color: #2e1760;
+    color: #d8c8f5;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+
+/* =====================
+   RESPONSIVE
+   ===================== */
+
+@media screen and (max-width: 768px) {
+    header.site-header .nav-list ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    aside {
+        position: static;
+        width: 100%;
+    }
+
+    .project-card {
+        flex: 1 1 130px;
+    }
+}
